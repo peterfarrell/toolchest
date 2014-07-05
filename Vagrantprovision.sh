@@ -19,11 +19,11 @@ then
 fi
 
 echo "Install Requirements via PIP ..."
-pip install -r /vagrant/requirements/development-requirements.txt
+pip install -r /vagrant/requirements.txt
 
 echo "Set the default settings module in the user profile ..."
 cd /home/vagrant
-echo "export DJANGO_SETTINGS_MODULE=toolchest.settings.development" >> .profile
+echo "export DJANGO_SETTINGS_MODULE=toolchest.settings" >> .profile
 source .profile
 
 echo "Run database setup script ..."
